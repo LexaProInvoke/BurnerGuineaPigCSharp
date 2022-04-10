@@ -1,0 +1,41 @@
+﻿<Window x:Class="BurnerGuineaPig.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BurnerGuineaPig"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="WidthAndHeight" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="110*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Температура датчик ="                               HorizontalAlignment="Left" Height="26" Margin="10,39,0,0"                   VerticalAlignment="Top" />
+        <Label Content="Частота сигнала выхода ="                           HorizontalAlignment="Left" Height="30" Margin="10,126,0,0"                  VerticalAlignment="Top" />
+        <Label Content="Дата и время"                    Grid.Column="1"    HorizontalAlignment="Left" Height="26" Margin="195,82,0,0"  Grid.Row="1"    VerticalAlignment="Top" />
+        <Label Content="Список предыдущих экспериментов" Grid.Column="1"    HorizontalAlignment="Left" Height="26" Margin="294,8,0,0"                   VerticalAlignment="Top" />
+        <Label Content="Начало"                          Grid.Column="1"    HorizontalAlignment="Left" Height="31" Margin="10,79,0,0"   Grid.Row="1"    VerticalAlignment="Top" />
+        <Label Content="конец"                           Grid.Column="1"    HorizontalAlignment="Left" Height="31" Margin="70,79,0,0"   Grid.Row="1"    VerticalAlignment="Top" />
+        <Label Content="обратный отсчет"                                    HorizontalAlignment="Left" Height="27" Margin="68,47,0,0"   Grid.Row="1"    VerticalAlignment="Top" />
+
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="10,26,0,0" Text="Задать температуру" TextWrapping="Wrap" VerticalAlignment="Top"  Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,67,0,0" Text="Время удержания температуры" TextWrapping="Wrap" VerticalAlignment="Top"  Grid.Column="1" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Text="Коэффициент для калибровки" TextWrapping="Wrap" VerticalAlignment="Center"  Grid.Column="1" Height="18"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="10,171,0,0" Text="Номер элемента  = " TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.Column="1"/>
+
+        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="10,41,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="38"/>
+        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="70,41,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="38"/>
+
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="345" Margin="294,52,10,10" Grid.RowSpan="2" VerticalAlignment="Top" Width="266"/>
+
+        <Button Content="Начать эксперимент" Grid.Column="1" HorizontalAlignment="Left" Margin="156,171,0,0" VerticalAlignment="Top" Height="20" Click="Button_Click_1" />
+        <ComboBox HorizontalAlignment="Left" Margin="27,191,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
